@@ -6,12 +6,12 @@
 	<div>
 		<a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
 		<a href="contributing.md"><img src="https://img.shields.io/badge/contributions-welcome-f04424.svg" alt="Contributions welcome"></a>
-		<a href="https://www.agentlist.io/changelog"><img src="https://img.shields.io/badge/systems-81-171714.svg" alt="81 systems cataloged"></a>
+		<a href="https://www.agentlist.io/changelog"><img src="https://img.shields.io/badge/systems-94-171714.svg" alt="94 systems cataloged"></a>
 		<a href="LICENSE"><img src="https://img.shields.io/badge/license-CC0_1.0-6b6a64.svg" alt="License: CC0"></a>
 	</div>
 	<br>
 	<h3><a href="https://www.agentlist.io">agentlist.io</a> — every agent, one spec sheet</h3>
-	<sub>81 systems · 66 vendors · 13 categories — verified 2026-09-24. Pricing and status are approximate; confirm on vendor pages.</sub>
+	<sub>94 systems · 77 vendors · 14 categories — verified 2026-09-25. Pricing and status are approximate; confirm on vendor pages.</sub>
 	<br>
 	<br>
 	<p>
@@ -32,7 +32,8 @@
 - [CLI & terminal agents](#cli--terminal-agents) (15)
 - [Cloud & autonomous agents](#cloud--autonomous-agents) (5)
 - [Model routers & gateways](#model-routers--gateways) (2)
-- [Bridges, brokers & protocols](#bridges-brokers--protocols) (3)
+- [Bridges, brokers & protocols](#bridges-brokers--protocols) (2)
+- [Agent communication & collaboration](#agent-communication--collaboration) (14)
 - [Personal & always-on agents](#personal--always-on-agents) (6)
 - [AI employees & digital coworkers](#ai-employees--digital-coworkers) (10)
 - [On-call & ops agents](#on-call--ops-agents) (7)
@@ -103,10 +104,28 @@
 
 ## Bridges, brokers & protocols
 
-*Connective tissue: tool protocols, inter-agent messaging, transports.* Bridges connect agents to tools, data, and each other. This covers tool protocols (MCP), inter-agent messaging standards and brokers, and transport bindings that attach chat or voice channels to an agent runtime.
+*Connective tissue: tool protocols and transports.* Bridges attach agents to tools, data, and channels — tool protocols (MCP), memory servers, and transport bindings that expose an agent through chat or voice. For agents talking to agents, see agent communication.
 
 - [Instinct](https://pypi.org/project/instinct-mcp/) - A self-learning memory MCP server for coding agents — it observes repeated patterns, scores them by confidence, and promotes mature ones into suggestions it exports back to Claude Code, Cursor, Windsurf, Codex, and CLAUDE.md. **(caution)** · [spec](https://www.agentlist.io/systems/instinct)
 - [Model Context Protocol](https://github.com/modelcontextprotocol/specification) - An open protocol for connecting agents and IDEs to tools and data sources through MCP servers. · [spec](https://www.agentlist.io/systems/mcp) ![GitHub Repo stars](https://img.shields.io/github/stars/modelcontextprotocol/specification?style=flat)
+
+## Agent communication & collaboration
+
+*Protocols and frameworks for agents that talk to agents.* Bridges connect agents to tools; this category connects agents to each other. It splits into open protocols for cross-vendor discovery and messaging (A2A, AGNTCY, ANP, NANDA) and multi-agent frameworks where a supervisor delegates work to specialists through handoffs (CrewAI, Microsoft Agent Framework, LangGraph, MetaGPT, CAMEL).
+
+- [A2A Protocol](https://github.com/a2aproject/A2A) - A2A (Agent2Agent) is the open protocol for cross-vendor agent communication — Google-originated, now governed at the Linux Foundation — standardizing Agent Cards for capability discovery plus task-based messaging between agents. · [spec](https://www.agentlist.io/systems/a2a) ![GitHub Repo stars](https://img.shields.io/github/stars/a2aproject/A2A?style=flat)
+- [Agency Swarm](https://github.com/VRSEN/agency-swarm) - VRSEN's framework for building 'agencies' of OpenAI-powered agents — defining agents, their tools, and which agents are allowed to talk to which over an explicit communication-flow graph. · [spec](https://www.agentlist.io/systems/agency-swarm) ![GitHub Repo stars](https://img.shields.io/github/stars/VRSEN/agency-swarm?style=flat)
+- [Agent Network Protocol](https://github.com/agent-network-protocol/AgentNetworkProtocol) - An open spec for a decentralized web of agents — DID-based identity, capability description, and peer-to-peer agent messaging without a central directory. · [spec](https://www.agentlist.io/systems/anp) ![GitHub Repo stars](https://img.shields.io/github/stars/agent-network-protocol/AgentNetworkProtocol?style=flat)
+- [AgentMail](https://agentmail.to) - Email infrastructure for agents — API-created inboxes, sending, and parsing that give an agent a durable, interoperable address for agent-to-agent and agent-to-human communication. · [spec](https://www.agentlist.io/systems/agentmail)
+- [AGNTCY](https://agntcy.org) - The Cisco-originated 'Internet of Agents' collective — an open-source stack for agent discovery (directory), secure messaging (SLIM), identity, and observability across vendors. · [spec](https://www.agentlist.io/systems/agntcy)
+- [BeeAI](https://github.com/i-am-bee/beeai-framework) - IBM's open-source agent platform — run, compose, and observe agents locally or on a cluster, with ACP/A2A-style interop and a web UI for non-technical operators. · [spec](https://www.agentlist.io/systems/beeai) ![GitHub Repo stars](https://img.shields.io/github/stars/i-am-bee/beeai-framework?style=flat)
+- [CAMEL](https://github.com/camel-ai/camel) - The research-rooted multi-agent framework: role-playing agents, agent societies, and toolkits for scaling multi-agent behavior — widely used in academic multi-agent studies. · [spec](https://www.agentlist.io/systems/camel) ![GitHub Repo stars](https://img.shields.io/github/stars/camel-ai/camel?style=flat)
+- [CrewAI](https://github.com/crewAIInc/crewAI) - The most widely adopted multi-agent framework: model crews of role-based agents in YAML or Python, run sequential or hierarchical processes, and manage fleets through the CrewAI control plane. · [spec](https://www.agentlist.io/systems/crewai) ![GitHub Repo stars](https://img.shields.io/github/stars/crewAIInc/crewAI?style=flat)
+- [LangGraph](https://github.com/langchain-ai/langgraph) - LangChain's agent orchestration framework — durable stateful graphs with supervisor and swarm multi-agent patterns, checkpointing, and LangGraph Platform for deployment. · [spec](https://www.agentlist.io/systems/langgraph) ![GitHub Repo stars](https://img.shields.io/github/stars/langchain-ai/langgraph?style=flat)
+- [MetaGPT](https://github.com/FoundationAgents/MetaGPT) - The multi-agent framework that turns a one-line brief into a simulated software company — PM, architect, and engineer agents handing off artifacts along an assembly line. · [spec](https://www.agentlist.io/systems/metagpt) ![GitHub Repo stars](https://img.shields.io/github/stars/FoundationAgents/MetaGPT?style=flat)
+- [Microsoft Agent Framework](https://github.com/microsoft/agent-framework) - The successor to AutoGen and Semantic Kernel's agent pieces — one OSS framework (Python and .NET) for single agents, multi-agent graphs, and Magentic-style orchestration. · [spec](https://www.agentlist.io/systems/agent-framework) ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/agent-framework?style=flat)
+- [NANDA](https://nanda.media.mit.edu) - MIT Media Lab's 'Internet of AI Agents' research program — a registry and index layer plus protocols for discovering, verifying, and composing agents at internet scale. · [spec](https://www.agentlist.io/systems/nanda)
+- [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) - The OpenAI Agents SDK is OpenAI's lightweight framework for agentic apps — its handoffs primitive is a first-class agent-to-agent mechanism: one agent transfers the live conversation to a specialist. · [spec](https://www.agentlist.io/systems/openai-agents-sdk) ![GitHub Repo stars](https://img.shields.io/github/stars/openai/openai-agents-python?style=flat)
 - [OpenScout / Scout](https://github.com/arach/openscout) - A local-first broker that lets addressable agents (Claude Code, Codex, Cursor) send and ask across harnesses on one mesh. · [spec](https://www.agentlist.io/systems/scout) ![GitHub Repo stars](https://img.shields.io/github/stars/arach/openscout?style=flat)
 
 ## Personal & always-on agents
