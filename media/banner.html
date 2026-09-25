@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1280px; height: 420px;
+    background: #f7f6f2;
+    color: #171714;
+    font-family: "Geist", -apple-system, "Helvetica Neue", sans-serif;
+    display: flex; flex-direction: column;
+    padding: 44px 56px 40px;
+    position: relative;
+    overflow: hidden;
+  }
+  .topline { position: absolute; top: 0; left: 0; right: 0; height: 6px; background: #f04424; }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .wordmark { font-size: 22px; font-weight: 700; letter-spacing: -0.03em; }
+  .wordmark .dot { color: #f04424; }
+  .tag {
+    margin-left: auto; font-size: 13px; font-weight: 600; letter-spacing: 0.16em;
+    color: #6b6a64; border: 1px solid #cecbc1; padding: 7px 12px;
+  }
+  .main { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+  .eyebrow { font-size: 14px; font-weight: 600; letter-spacing: 0.18em; color: #f04424; margin-bottom: 16px; }
+  h1 { font-size: 68px; font-weight: 700; letter-spacing: -0.035em; line-height: 1.0; }
+  .sub {
+    margin-top: 18px; font-family: Georgia, "Times New Roman", serif; font-style: italic;
+    font-size: 24px; color: #6b6a64; line-height: 1.3; max-width: 860px;
+  }
+  .rule { height: 1px; background: #cecbc1; margin: 30px 0 20px; }
+  .foot { display: flex; align-items: baseline; justify-content: space-between; }
+  .cats { font-size: 12.5px; letter-spacing: 0.1em; color: #97958c; font-weight: 500; }
+  .url { font-size: 16px; font-weight: 600; color: #171714; }
+  .url .dot { color: #f04424; }
+  /* faint index-bars motif, right edge */
+  .motif { position: absolute; right: 56px; top: 128px; opacity: 0.07; }
+</style>
+</head>
+<body>
+  <div class="topline"></div>
+  <div class="brand">
+    <svg width="30" height="23" viewBox="0 0 34 26">
+      <rect x="0" y="0" width="22" height="6.4" fill="#171714" />
+      <rect x="4" y="9.8" width="22" height="6.4" fill="#171714" />
+      <rect x="0" y="19.6" width="22" height="6.4" fill="#171714" />
+      <rect x="24.6" y="0" width="9.4" height="9.4" fill="#f04424" />
+    </svg>
+    <span class="wordmark">agentlist<span class="dot">.</span>io</span>
+    <span class="tag">MAINTAINED CATALOG</span>
+  </div>
+  <div class="main">
+    <div class="eyebrow">AWESOME LIST · 81 SYSTEMS · 66 VENDORS · 13 CATEGORIES</div>
+    <h1>Awesome Agent List</h1>
+    <div class="sub">Every agent, one spec sheet — coding agents, digital employees, ops agents, computer-use, research, and voice — normalized at the source.</div>
+  </div>
+  <svg class="motif" width="210" height="160" viewBox="0 0 34 26">
+    <rect x="0" y="0" width="22" height="6.4" fill="#171714" />
+    <rect x="4" y="9.8" width="22" height="6.4" fill="#171714" />
+    <rect x="0" y="19.6" width="22" height="6.4" fill="#171714" />
+    <rect x="24.6" y="0" width="9.4" height="9.4" fill="#f04424" />
+  </svg>
+  <div class="rule"></div>
+  <div class="foot">
+    <div class="cats">AI IDES · EXTENSIONS · CLI · CLOUD · ROUTERS · BRIDGES · PERSONAL · EMPLOYEES · OPS · COMPUTER-USE · RESEARCH · VOICE</div>
+    <div class="url">agentlist<span class="dot">.</span>io</div>
+  </div>
+</body>
+</html>
