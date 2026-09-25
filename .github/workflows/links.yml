@@ -1,0 +1,25 @@
+name: links
+
+on:
+  schedule:
+    - cron: "0 6 * * 1" # Mondays 06:00 UTC
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  lychee:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          # ampcode.com and gemini.google reject lychee's HTTP/2 client at the edge
+          # (both return 200 in real browsers) — excluded to keep the report clean.
+          # Vendor pages occasionally 429 bots; log findings without failing the badge.
+          args: >-
+            --verbose --no-progress --accept 200,204,206,429
+            --exclude 'ampcode\.com' --exclude 'gemini\.google'
+            './README.md'
+          fail: false
