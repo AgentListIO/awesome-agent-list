@@ -5,7 +5,7 @@
 	<br>
 	<div>
 		<a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
-		<a href="contributing.md"><img src="https://img.shields.io/badge/contributions-welcome-f04424.svg" alt="Contributions welcome"></a>
+		<a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/contributions-welcome-f04424.svg" alt="Contributions welcome"></a>
 		<a href="https://www.agentlist.io/changelog"><img src="https://img.shields.io/badge/systems-108-171714.svg" alt="108 systems cataloged"></a>
 		<a href="LICENSE"><img src="https://img.shields.io/badge/license-CC0_1.0-6b6a64.svg" alt="License: CC0"></a>
 	</div>
@@ -223,4 +223,4 @@
 
 ---
 
-*Maintained from the [www.agentlist.io](https://www.agentlist.io) catalog — additions and corrections go through [CONTRIBUTING.md](contributing.md), not hand edits to this README. Entries are editorial records, not endorsements or paid placements. [CC0](LICENSE).*
+*Maintained from the [www.agentlist.io](https://www.agentlist.io) catalog — additions and corrections go through [CONTRIBUTING.md](CONTRIBUTING.md), not hand edits to this README. Entries are editorial records, not endorsements or paid placements. [CC0](LICENSE).*
