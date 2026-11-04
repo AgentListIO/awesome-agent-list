@@ -6,12 +6,12 @@
 	<div>
 		<a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
 		<a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/contributions-welcome-f04424.svg" alt="Contributions welcome"></a>
-		<a href="https://www.agentlist.io/changelog"><img src="https://img.shields.io/badge/systems-108-171714.svg" alt="108 systems cataloged"></a>
+		<a href="https://www.agentlist.io/changelog"><img src="https://img.shields.io/badge/systems-109-171714.svg" alt="109 systems cataloged"></a>
 		<a href="LICENSE"><img src="https://img.shields.io/badge/license-CC0_1.0-6b6a64.svg" alt="License: CC0"></a>
 	</div>
 	<br>
 	<h3><a href="https://www.agentlist.io">agentlist.io</a> — every agent, one spec sheet</h3>
-	<sub>108 systems · 89 vendors · 14 categories — verified 2026-09-25. Pricing and status are approximate; confirm on vendor pages.</sub>
+	<sub>109 systems · 90 vendors · 14 categories — verified 2026-09-25. Pricing and status are approximate; confirm on vendor pages.</sub>
 	<br>
 	<br>
 	<p>
@@ -37,7 +37,7 @@
 - [Agent communication & collaboration](#agent-communication--collaboration) (13)
 - [Agent services](#agent-services) (15)
 - [Personal & always-on agents](#personal--always-on-agents) (6)
-- [AI employees & digital coworkers](#ai-employees--digital-coworkers) (10)
+- [AI employees & digital coworkers](#ai-employees--digital-coworkers) (11)
 - [On-call & ops agents](#on-call--ops-agents) (7)
 - [Browser & computer-use agents](#browser--computer-use-agents) (6)
 - [Research & analyst agents](#research--analyst-agents) (7)
@@ -170,6 +170,7 @@
 - [Fin](https://www.intercom.com) - Intercom's AI support agent: it answers customer questions from your help content, resolves conversations end-to-end, and charges only when it resolves. · `human-handoff` `memory` `api-native` · [spec](https://www.agentlist.io/systems/fin)
 - [Harvey](https://www.harvey.ai) - The AI associate for legal work: drafting, review, diligence, and research grounded in legal corpora, deployed inside law firms and enterprise legal departments. · `citations` `web-research` `human-handoff` · [spec](https://www.agentlist.io/systems/harvey)
 - [Juicebox (PeopleGPT)](https://juicebox.ai) - The recruiting AI employee: it searches candidate pools in natural language, runs outbound outreach, and ranks talent against your rubric. · `web-research` `human-handoff` `api-native` · [spec](https://www.agentlist.io/systems/juicebox)
+- [Liaison](https://useliaison.com) - An AI employee for small businesses that drafts invoice reminders, follows up on leads, and fills gaps in the calendar. · `memory` `human-handoff` `tool-calling` `browser-ops` · [spec](https://www.agentlist.io/systems/liaison)
 - [Lindy](https://www.lindy.ai) - The build-your-own-employee platform: no-code agents that handle email triage, scheduling, meeting notes, CRM updates, and custom back-office workflows. · `workflow-builder` `human-handoff` `tool-calling` `api-native` · [spec](https://www.agentlist.io/systems/lindy)
 - [Mercor](https://mercor.com) - The AI interviewer and talent marketplace: its agent screens candidates in structured video interviews and matches them to roles — and increasingly to AI-training gigs. · `human-handoff` `api-native` · [spec](https://www.agentlist.io/systems/mercor)
 - [Piper](https://www.qualified.com) - Qualified's inbound AI SDR: she greets and qualifies website visitors in chat, works target accounts, and routes or books meetings against your CRM. · `human-handoff` `web-research` `api-native` · [spec](https://www.agentlist.io/systems/piper)
